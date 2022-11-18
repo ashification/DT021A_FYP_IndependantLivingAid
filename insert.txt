@@ -1,0 +1,5 @@
+
+
+//INSERT INTO client_hr(client_ref, name_first,ts, rhr_bpm, max_bpm,risk_fact, risk_fact_nw) VALUES(client_ref, name_first,ts, rhr_bpm, max_bpm,risk_fact, risk_fact_nw)')
+
+
