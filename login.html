@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>WEBSITE TITLE</title> <!-- CHANGE -->
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/landing-page.min.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-light bg-light static-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Home</a> <!-- AS OF NOW YOU WILL BE LOGGED OUT IF YOU DO THIS-->
+      </div>
+    </nav>
+
+    <!-- Masthead -->
+    <header class="masthead text-white text-center"> <!-- MASTHEAD IS THE NAME OF THE CORRESPONDING MASTHEAD SCSS FILE IN THE SCSS FOLDER - CHANGE THE IMG URL WITHIN THIS TO AND ADD THE IMG TO THE IMG FOLDER TO CHANGE-->
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <h1 class="mb-5">Login</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Login Form -->
+
+    <div class="container">
+      <br><br><br>
+    </div>
+
+    <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+       <form action=""> <!-- CHECK THIS -->
+	  <div class="form-row">
+	    <label for="uname"><b>Username</b></label>
+	    <input type="text" placeholder="Enter Username" name="username" required>
+          </div>
+          <br>
+	  <div class="form-row">
+	    <label for="psw"><b>Password</b></label>
+	    <input type="password" placeholder="Enter Password" name="password" required>
+          </div>
+          <div class="form-row">
+	    <button class="btn btn-success" type="submit" onclick="validate(this.form)">Login</button>
+          </div>
+	  </div>
+	</form> 
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-light pull-right">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 h-100 text-center text-lg-left my-auto">
+            <p class="text-muted small mb-4 mb-lg-0">&copy; Aisling Lee * Your Website 2018. All Rights Reserved.</p> <!-- CHANGE + REPLACE FOOTER ON EVERY PAGE WITH WHAT YOU CHANGE -->
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script language="javascript">
+	function validate(form) {
+	 // Checks if the entered username and password match
+	 if(form.username.value == "myusername" && form.password.value == "mypassword") // CHANGE USERNAME AND PASSWORD HERE
+	  {
+	    window.open('home.html')
+	  }
+	 else
+	 {
+	   alert("Error Password or Username")
+	  }
+	}
+    </script>
+
+  </body>
+</html>
